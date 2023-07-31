@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Forecast</h1>
+    <form id="locationForm">
+      <input type="text" id="locationInput" placeholder="Enter location">
+      <label>
+        <input type="radio" name="unit" value="metric" checked>
+        Celsius
+      </label>
+      <label>
+        <input type="radio" name="unit" value="imperial">
+        Fahrenheit
+      </label>
+      <button type="submit">Get Forecast</button>
+    </form>
+    <div id="loadingSpinner" class="hidden">
+      <div class="spinner"></div>
+    </div>
+    <div id="weatherData"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
